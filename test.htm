@@ -1,0 +1,28 @@
+<html>
+<title>
+ 
+</title>
+        
+<body onload="fn1();">
+    <span id="timer">3</span>
+    <script>
+        var timer;
+        function fn1(){
+            console.log(999);
+            timer=document.getElementById("timer") ;
+            fn2() ;
+        }
+    
+        function fn2(){
+            if (timer.innerHTML>0){
+                timer.innerHTML -= 1 ;
+                setTimeout(fn2,1000) ; 
+            }
+            else{
+                window.location.href="http://www.google.com"
+            }
+        }
+    
+    </script>   
+</body>
+</html>
